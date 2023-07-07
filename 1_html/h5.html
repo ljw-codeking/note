@@ -1,0 +1,94 @@
+<!-- h5有什么好处？ -->
+<!-- 语义化标签，更易于理解，更利于SEO -->
+<header></header>
+<main></main>
+<footer></footer>
+<section></section>
+<nav></nav>
+<aside></aside>
+<audio src=""></audio>
+<video src=""></video>
+<svg></svg>
+<!-- 自定义属性 以及新增的属性-->
+<div data-name="hello word"></div>
+!! contenteditable 使得div标签内容可以被编辑
+<div contenteditable="true">123123123123123123123</div>
+!! placeholder 提示信息
+<input type="text" placeholder="请输入xxx">
+!! step 是否必须填写
+!! hidden 属性隐藏标签
+<div step="3" hidden>12312312312323sdfasdfasf </div>
+!! draggable 是否能被拖动
+<!-- 添加了许多表单控件 -->
+<input type="email" required />
+<input type="url" />
+<input type="number" />
+<input type="range" />
+<input type="date" />
+<input type="month" />
+<input type="week" />
+<input type="time" />
+<input type="datetime-local" />
+<input type="search" />
+<input type="color" />
+
+
+<script>
+  /**
+   * javascript h5新增的API
+  */
+  document.querySelector()
+  document.querySelectorAll()
+  // classList 属性
+  // add length 等操作 class 的方法
+  // getAttribute setAttribute 操作自定义属性的方法
+  // scrollIntoView() 滚动到当前元素的位置  具体应用查文档
+
+  // localStorage sessionStorage 浏览器存储方案
+  // web sockets  长链接通信
+  // web worker 开启多线程
+
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./protoType.js"></script>
+</head>
+
+<body>
+  <div style="width: 500px;height: 500px;background-color: pink;" contenteditable="true" draggable="false">2342342342342
+  </div>
+  <progress value="0.5"></progress>
+
+  <style>
+    .father {
+      width: 200px;
+      height: 200px;
+      background: skyblue;
+    }
+
+    .son {
+      width: 100px;
+      height: 100px;
+      background: red;
+      margin-left: 50px;
+    }
+  </style>
+
+
+  ---- html部分---
+
+  <body>
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </body>
+</body>
+
+</html>
